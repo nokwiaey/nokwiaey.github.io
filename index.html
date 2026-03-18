@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>我的导航</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 30px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #666;
+      font-size: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px;
+      border-radius: 12px;
+      background: white;
+      text-decoration: none;
+      color: #333;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: all 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🚀 我的导航</h1>
+
+<h2>内部系统</h2>
+<div class="grid">
+  <a href="https://admin.xxx.com" class="card">
+    <img src="https://www.google.com/s2/favicons?domain=admin.xxx.com">
+    Admin
+  </a>
+
+  <a href="https://monitor.xxx.com" class="card">
+    <img src="https://www.google.com/s2/favicons?domain=monitor.xxx.com">
+    监控
+  </a>
+</div>
+
+<h2>工具</h2>
+<div class="grid">
+  <a href="https://github.com" class="card">
+    <img src="https://www.google.com/s2/favicons?domain=github.com">
+    GitHub
+  </a>
+
+  <a href="https://chat.openai.com" class="card">
+    <img src="https://www.google.com/s2/favicons?domain=openai.com">
+    ChatGPT
+  </a>
+</div>
+
+</body>
+</html>
